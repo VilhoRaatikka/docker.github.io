@@ -204,6 +204,7 @@ recommended for Linux distributions that do not use systemd.
       "hosts": ["unix:///var/run/docker.sock", "tcp://127.0.0.1:2375"]
     }
     ```
+    Note that if the content overlaps the content of /etc/systemd/system/docker.service.d/override.conf systemctl restart docker.service will fail.
 
 2.  Restart Docker. 
 
